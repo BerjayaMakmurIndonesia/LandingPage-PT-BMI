@@ -1,7 +1,12 @@
-/* ==========================================
+/* =====================================================
    PT BERJAYA MAKMUR INDONESIA
    Landing Page
-========================================== */
+   STYLE.CSS - BAGIAN 1/3
+===================================================== */
+
+/* ===========================
+   RESET
+=========================== */
 
 *{
     margin:0;
@@ -17,136 +22,160 @@ body{
 
     font-family:'Poppins',sans-serif;
 
+    width:100%;
     height:100vh;
 
     overflow:hidden;
 
     display:flex;
-
     align-items:center;
 
     position:relative;
 
-    color:#fff;
+    color:#ffffff;
 
     background-image:url("assets/background.png");
-
     background-size:cover;
-
     background-position:center;
-
     background-repeat:no-repeat;
 
     animation:bgZoom 18s ease-in-out infinite alternate;
 
 }
 
-/* ==========================================
-   Background Overlay
-========================================== */
+/* ===========================
+   OVERLAY
+=========================== */
 
 .overlay{
 
     position:absolute;
+
     inset:0;
 
     background:
     linear-gradient(
+
         90deg,
-        rgba(5,17,35,.95) 0%,
-        rgba(5,17,35,.88) 20%,
-        rgba(5,17,35,.65) 45%,
-        rgba(5,17,35,.28) 70%,
-        rgba(5,17,35,.05) 100%
+
+        rgba(3,17,35,.95) 0%,
+
+        rgba(3,17,35,.88) 25%,
+
+        rgba(3,17,35,.65) 45%,
+
+        rgba(3,17,35,.30) 70%,
+
+        rgba(3,17,35,.05) 100%
+
     );
 
 }
 
-/* ==========================================
-   Main Glass Card
-========================================== */
+/* ===========================
+   MAIN CONTAINER
+=========================== */
 
 .container{
 
     position:relative;
 
-    z-index:5;
+    z-index:2;
 
     width:560px;
 
-    margin-left:90px;
+    margin-left:80px;
 
     padding:55px;
 
-    border-radius:26px;
+    border-radius:28px;
 
     background:rgba(255,255,255,.08);
 
-    border:1px solid rgba(255,255,255,.18);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
 
-    backdrop-filter:blur(20px);
-
-    -webkit-backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.15);
 
     box-shadow:
 
-        0 25px 60px rgba(0,0,0,.45);
+        0 25px 70px rgba(0,0,0,.45);
+
+    animation:fadeUp .9s ease;
 
 }
 
-/* ==========================================
+/* ===========================
    LOGO
-========================================== */
+=========================== */
 
 .logo-area{
 
-display:flex;
+    display:flex;
 
-align-items:center;
+    align-items:center;
 
-gap:18px;
+    gap:18px;
 
-margin-bottom:35px;
+    margin-bottom:35px;
 
 }
 
 .logo{
 
-width:72px;
+    width:70px;
 
-height:auto;
-
-}
-
-.company-name{
-
-    font-size:14px;
-
-    font-weight:600;
-
-    letter-spacing:1.2px;
-
-    text-transform:uppercase;
+    height:auto;
 
 }
 
-/* ==========================================
-   Heading
-========================================== */
+.company{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.company span:first-child{
+
+    font-size:15px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+.company span:last-child{
+
+    font-size:15px;
+
+    font-weight:500;
+
+    letter-spacing:1px;
+
+}
+
+/* ===========================
+   TITLE
+=========================== */
 
 h1{
 
     font-size:54px;
 
-    line-height:1.1;
+    line-height:1.15;
 
     font-weight:700;
 
+    margin-bottom:25px;
+
 }
 
-/* ==========================================
-   Red Line
-========================================== */
+/* ===========================
+   RED LINE
+=========================== */
 
 .line{
 
@@ -156,33 +185,53 @@ h1{
 
     background:#d71920;
 
+    border-radius:100px;
+
+    margin-bottom:30px;
+
 }
 
-/* ==========================================
-   Description
-========================================== */
+/* ===========================
+   DESCRIPTION
+=========================== */
 
 p{
 
     font-size:18px;
 
-    line-height:1.8;
+    line-height:1.9;
+
+    color:#ececec;
 
     max-width:430px;
 
+    margin-bottom:40px;
+
 }
 
-/* ==========================================
-   BUTTON
-========================================== */
+/* =====================================================
+   PT BERJAYA MAKMUR INDONESIA
+   Landing Page
+   STYLE.CSS - BAGIAN 2/3
+===================================================== */
+
+/* ===========================
+   BUTTON GROUP
+=========================== */
 
 .buttons{
 
     display:flex;
+
     flex-direction:column;
+
     gap:18px;
 
 }
+
+/* ===========================
+   BUTTON
+=========================== */
 
 .btn{
 
@@ -194,23 +243,27 @@ p{
 
     padding:18px 24px;
 
+    border-radius:14px;
+
     text-decoration:none;
 
-    color:white;
-
-    border-radius:14px;
+    color:#ffffff;
 
     font-size:17px;
 
     font-weight:600;
 
-    transition:.35s;
+    transition:.35s ease;
 
     box-shadow:
 
         0 10px 25px rgba(0,0,0,.25);
 
 }
+
+/* ===========================
+   LEFT SIDE
+=========================== */
 
 .left{
 
@@ -222,11 +275,35 @@ p{
 
 }
 
+/* ===========================
+   ICON
+=========================== */
+
+.left i{
+
+    width:24px;
+
+    text-align:center;
+
+    font-size:20px;
+
+}
+
+/* ===========================
+   RIGHT ARROW
+=========================== */
+
 .right{
 
     transition:.35s;
 
+    font-size:18px;
+
 }
+
+/* ===========================
+   WEBSITE BUTTON
+=========================== */
 
 .website{
 
@@ -234,11 +311,19 @@ p{
 
 }
 
+/* ===========================
+   PLUMBING BUTTON
+=========================== */
+
 .plumbing{
 
     background:#198754;
 
 }
+
+/* ===========================
+   HYDRANT BUTTON
+=========================== */
 
 .hydrant{
 
@@ -246,23 +331,35 @@ p{
 
 }
 
+/* ===========================
+   WHATSAPP BUTTON
+=========================== */
+
 .whatsapp{
 
     background:#25D366;
 
 }
 
+/* ===========================
+   BUTTON HOVER
+=========================== */
+
 .btn:hover{
 
     transform:translateX(8px);
 
-    filter:brightness(110%);
+    filter:brightness(108%);
 
     box-shadow:
 
-        0 18px 35px rgba(0,0,0,.40);
+        0 18px 40px rgba(0,0,0,.40);
 
 }
+
+/* ===========================
+   ARROW ANIMATION
+=========================== */
 
 .btn:hover .right{
 
@@ -270,66 +367,280 @@ p{
 
 }
 
-/* ==========================================
-   ANIMATION
-========================================== */
+/* ===========================
+   BUTTON ACTIVE
+=========================== */
 
-.delay1{
+.btn:active{
 
-    animation:fadeUp .8s .2s both;
-
-}
-
-.delay2{
-
-    animation:fadeUp .8s .35s both;
+    transform:scale(.98);
 
 }
 
-.delay3{
+/* ===========================
+   REMOVE LINK COLOR
+=========================== */
 
-    animation:fadeUp .8s .5s both;
+.btn:visited{
 
-}
-
-.delay4{
-
-    animation:fadeUp .8s .65s both;
+    color:#ffffff;
 
 }
+
+/* ===========================
+   FADE IN
+=========================== */
 
 @keyframes fadeUp{
 
-from{
+    from{
 
-opacity:0;
+        opacity:0;
 
-transform:translateY(35px);
+        transform:translateY(35px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
 
 }
 
-to{
-
-opacity:1;
-
-transform:translateY(0);
-
-}
-
-}
+/* ===========================
+   BACKGROUND ZOOM
+=========================== */
 
 @keyframes bgZoom{
 
-from{
+    from{
 
-background-size:100%;
+        background-size:100%;
+
+    }
+
+    to{
+
+        background-size:108%;
+
+    }
 
 }
 
-to{
+/* =====================================================
+   PT BERJAYA MAKMUR INDONESIA
+   Landing Page
+   STYLE.CSS - BAGIAN 3/3
+===================================================== */
 
-background-size:108%;
+/* ===========================
+   SMOOTH TRANSITIONS
+=========================== */
+
+.logo,
+h1,
+.line,
+p,
+.btn{
+    transition:.3s ease;
+}
+
+/* ===========================
+   CUSTOM SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0b1728;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#4b5b73;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#70839d;
+}
+
+/* ===========================
+   MOBILE & TABLET
+=========================== */
+
+@media (max-width:992px){
+
+    body{
+
+        height:auto;
+        min-height:100vh;
+
+        overflow:auto;
+
+        justify-content:center;
+
+        padding:30px 20px;
+
+    }
+
+    .container{
+
+        width:100%;
+
+        max-width:620px;
+
+        margin:0;
+
+        padding:40px 30px;
+
+    }
 
 }
+
+@media (max-width:768px){
+
+    .logo{
+
+        width:60px;
+
+    }
+
+    .company span{
+
+        font-size:13px;
+
+    }
+
+    h1{
+
+        font-size:40px;
+
+        line-height:1.2;
+
+    }
+
+    p{
+
+        font-size:16px;
+
+        line-height:1.8;
+
+    }
+
+    .btn{
+
+        font-size:16px;
+
+        padding:16px 20px;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    body{
+
+        padding:20px 15px;
+
+    }
+
+    .container{
+
+        padding:28px 22px;
+
+        border-radius:20px;
+
+    }
+
+    .logo-area{
+
+        gap:12px;
+
+        margin-bottom:25px;
+
+    }
+
+    .logo{
+
+        width:52px;
+
+    }
+
+    .company span{
+
+        font-size:12px;
+
+        letter-spacing:.5px;
+
+    }
+
+    h1{
+
+        font-size:30px;
+
+        margin-bottom:18px;
+
+    }
+
+    .line{
+
+        width:75px;
+
+        height:4px;
+
+        margin-bottom:22px;
+
+    }
+
+    p{
+
+        font-size:15px;
+
+        margin-bottom:30px;
+
+    }
+
+    .buttons{
+
+        gap:14px;
+
+    }
+
+    .btn{
+
+        padding:15px 18px;
+
+        font-size:15px;
+
+        border-radius:12px;
+
+    }
+
+    .left{
+
+        gap:12px;
+
+    }
+
+    .left i{
+
+        width:20px;
+
+        font-size:18px;
+
+    }
+
+    .right{
+
+        font-size:16px;
+
+    }
 
 }
