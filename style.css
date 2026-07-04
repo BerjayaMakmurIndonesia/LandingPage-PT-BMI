@@ -312,12 +312,12 @@ p{
 }
 
 /* ===========================
-   PLUMBING BUTTON
+   POMPA ARTHUR BUTTON
 =========================== */
 
-.plumbing{
+.pompaarthur{
 
-    background:#198754;
+    background:#ff4f61;
 
 }
 
@@ -327,7 +327,37 @@ p{
 
 .hydrant{
 
-    background:#dc3545;
+    background:#ff0019;
+
+}
+
+/* ===========================
+   DIESEL BUTTON
+=========================== */
+
+.diesel{
+
+    background:#25D366;
+
+}
+
+/* ===========================
+   ELEKTRIK MOTOR BUTTON
+=========================== */
+
+.motor{
+
+    background:#25D366;
+
+}
+
+/* ===========================
+   NFPA MEMBER BUTTON
+=========================== */
+
+.nfpa{
+
+    background:#25D366;
 
 }
 
