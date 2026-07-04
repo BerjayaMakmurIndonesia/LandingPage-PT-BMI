@@ -1,52 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-<title>Jasa Saya</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PT Berjaya Makmur Indonesia</title>
+
 <style>
+
 body{
-font-family: Arial;
+margin:0;
+font-family:Arial;
+background:linear-gradient(135deg,#4facfe,#00f2fe);
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
 text-align:center;
-background:#f4f4f4;
-padding:40px;
+overflow:hidden;
 }
 
-.card{
-background:white;
-padding:30px;
-border-radius:10px;
-max-width:400px;
-margin:auto;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
+/* Animasi Fade */
+.container{
+animation:fadeIn 2s ease;
 }
 
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(20px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+p{
+font-size:18px;
+}
+
+/* Tombol */
 .button{
 display:inline-block;
-padding:12px 20px;
+margin-top:20px;
+padding:14px 28px;
 background:#25D366;
 color:white;
 text-decoration:none;
-border-radius:6px;
-margin-top:20px;
+border-radius:30px;
+font-size:18px;
+transition:0.3s;
 }
+
+.button:hover{
+background:#1ebd5a;
+transform:scale(1.05);
+}
+
+/* Animasi Background */
+.bubble{
+position:absolute;
+bottom:-100px;
+width:40px;
+height:40px;
+background:rgba(255,255,255,0.3);
+border-radius:50%;
+animation:rise 10s infinite;
+}
+
+@keyframes rise{
+0%{transform:translateY(0);}
+100%{transform:translateY(-1200px);}
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="card">
+<div class="container">
 
-<h1>Jasa Desain & Website</h1>
+<h1>Jasa Digital Profesional</h1>
 
-<p>Saya menyediakan jasa desain, website, dan digital service dengan harga terjangkau.</p>
-
-<h3>Hubungi Saya</h3>
+<p>
+Website • Desain • Landing Page
+</p>
 
 <a class="button" href="https://wa.me/628123456789">
 Chat WhatsApp
 </a>
 
 </div>
+
+<!-- Background music -->
+<audio autoplay loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- animasi bubble -->
+<div class="bubble" style="left:10%; animation-duration:8s;"></div>
+<div class="bubble" style="left:30%; animation-duration:10s;"></div>
+<div class="bubble" style="left:50%; animation-duration:7s;"></div>
+<div class="bubble" style="left:70%; animation-duration:11s;"></div>
+<div class="bubble" style="left:90%; animation-duration:9s;"></div>
 
 </body>
 </html>
