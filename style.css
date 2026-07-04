@@ -319,3 +319,27 @@ p{
 }
 
 }
+
+.btn span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.btn i{
+
+    font-size:22px;
+
+    transition:.3s;
+
+}
+
+.btn:hover .fa-chevron-right{
+
+    transform:translateX(6px);
+
+}
