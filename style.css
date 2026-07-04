@@ -1,60 +1,321 @@
+/* ===========================
+   RESET
+=========================== */
+
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
 
-height:100vh;
+    font-family:'Poppins',sans-serif;
 
-background-image:url("assets/background.png");
+    background:url("assets/background.png");
 
-background-size:cover;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 
-background-position:center;
+    height:100vh;
 
-background-repeat:no-repeat;
+    overflow:hidden;
 
-overflow:hidden;
+    display:flex;
 
-display:flex;
+    align-items:center;
 
-align-items:center;
+    position:relative;
+
+    animation:bgZoom 25s ease-in-out infinite alternate;
 
 }
+
+/* ===========================
+   Background Overlay
+=========================== */
 
 .overlay{
 
-position:absolute;
+    position:absolute;
 
-left:0;
-top:0;
+    inset:0;
 
-width:100%;
-height:100%;
+    background:linear-gradient(
+        90deg,
+        rgba(4,18,40,.93) 0%,
+        rgba(4,18,40,.82) 30%,
+        rgba(4,18,40,.55) 55%,
+        rgba(4,18,40,.15) 80%,
+        rgba(4,18,40,.02) 100%
+    );
 
-background:linear-gradient(
-90deg,
-rgba(5,15,35,.92) 0%,
-rgba(5,15,35,.75) 35%,
-rgba(5,15,35,.25) 65%,
-rgba(5,15,35,.05) 100%
-);
+    backdrop-filter:blur(2px);
 
 }
 
+/* ===========================
+   Main Card
+=========================== */
+
 .container{
 
-position:relative;
+    position:relative;
 
-z-index:2;
+    z-index:10;
 
-width:520px;
+    width:560px;
 
-margin-left:80px;
+    margin-left:80px;
 
-color:white;
+    padding:50px;
+
+    border-radius:28px;
+
+    background:rgba(10,18,30,.30);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.45);
+
+    animation:fadeUp 1s ease;
+
+}
+
+/* ===========================
+   Logo
+=========================== */
+
+.logo{
+
+    width:90px;
+
+    margin-bottom:18px;
+
+}
+
+.logo-area h4{
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    margin-bottom:35px;
+
+}
+
+/* ===========================
+   Heading
+=========================== */
+
+h1{
+
+    color:white;
+
+    font-size:56px;
+
+    line-height:1.12;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+/* ===========================
+   Red Line
+=========================== */
+
+.line{
+
+    width:120px;
+
+    height:5px;
+
+    border-radius:50px;
+
+    background:#ff3131;
+
+    margin-bottom:30px;
+
+}
+
+/* ===========================
+   Description
+=========================== */
+
+p{
+
+    color:#d8d8d8;
+
+    font-size:19px;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.buttons{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    text-decoration:none;
+
+    color:white;
+
+    padding:18px 25px;
+
+    border-radius:14px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.website{
+
+    background:#1767d4;
+
+}
+
+.plumbing{
+
+    background:#15803d;
+
+}
+
+.hydrant{
+
+    background:#c1121f;
+
+}
+
+.whatsapp{
+
+    background:#16a34a;
+
+}
+
+.btn:hover{
+
+    transform:translateX(10px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+/* ===========================
+   Animations
+=========================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(35px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes bgZoom{
+
+    from{
+
+        background-size:100%;
+
+    }
+
+    to{
+
+        background-size:108%;
+
+    }
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media(max-width:900px){
+
+.container{
+
+    width:92%;
+
+    margin:20px;
+
+    padding:30px;
+
+}
+
+h1{
+
+    font-size:36px;
+
+}
+
+p{
+
+    font-size:16px;
+
+}
+
+.logo{
+
+    width:70px;
+
+}
+
+.btn{
+
+    font-size:16px;
+
+}
 
 }
