@@ -1,6 +1,7 @@
-/* ===========================
-   RESET
-=========================== */
+/* ==========================================
+   PT BERJAYA MAKMUR INDONESIA
+   Landing Page
+========================================== */
 
 *{
     margin:0;
@@ -16,12 +17,6 @@ body{
 
     font-family:'Poppins',sans-serif;
 
-    background:url("assets/background.png");
-
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-
     height:100vh;
 
     overflow:hidden;
@@ -32,13 +27,23 @@ body{
 
     position:relative;
 
-    animation:bgZoom 25s ease-in-out infinite alternate;
+    color:#fff;
+
+    background-image:url("assets/background.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    animation:bgZoom 18s ease-in-out infinite alternate;
 
 }
 
-/* ===========================
+/* ==========================================
    Background Overlay
-=========================== */
+========================================== */
 
 .overlay{
 
@@ -47,27 +52,32 @@ body{
     inset:0;
 
     background:linear-gradient(
-        90deg,
-        rgba(4,18,40,.93) 0%,
-        rgba(4,18,40,.82) 30%,
-        rgba(4,18,40,.55) 55%,
-        rgba(4,18,40,.15) 80%,
-        rgba(4,18,40,.02) 100%
-    );
 
-    backdrop-filter:blur(2px);
+        90deg,
+
+        rgba(5,17,35,.92) 0%,
+
+        rgba(5,17,35,.80) 28%,
+
+        rgba(5,17,35,.55) 45%,
+
+        rgba(5,17,35,.20) 70%,
+
+        rgba(5,17,35,.05) 100%
+
+    );
 
 }
 
-/* ===========================
-   Main Card
-=========================== */
+/* ==========================================
+   Main Glass Card
+========================================== */
 
 .container{
 
     position:relative;
 
-    z-index:10;
+    z-index:2;
 
     width:560px;
 
@@ -77,34 +87,39 @@ body{
 
     border-radius:28px;
 
-    background:rgba(10,18,30,.30);
+    background:rgba(8,15,30,.25);
 
     backdrop-filter:blur(18px);
 
     border:1px solid rgba(255,255,255,.15);
 
     box-shadow:
-    0 20px 60px rgba(0,0,0,.45);
 
-    animation:fadeUp 1s ease;
+    0 25px 70px rgba(0,0,0,.45);
+
+    animation:fadeUp .9s ease;
 
 }
 
-/* ===========================
+/* ==========================================
    Logo
-=========================== */
+========================================== */
 
 .logo{
 
     width:90px;
 
-    margin-bottom:18px;
+    margin-bottom:20px;
+
+}
+
+.logo-area{
+
+    margin-bottom:25px;
 
 }
 
 .logo-area h4{
-
-    color:white;
 
     font-size:18px;
 
@@ -112,72 +127,66 @@ body{
 
     letter-spacing:1px;
 
-    margin-bottom:35px;
-
 }
 
-/* ===========================
+/* ==========================================
    Heading
-=========================== */
+========================================== */
 
 h1{
 
-    color:white;
+    font-size:54px;
 
-    font-size:56px;
+    line-height:1.15;
 
-    line-height:1.12;
+    margin-bottom:25px;
 
     font-weight:700;
 
-    margin-bottom:20px;
-
 }
 
-/* ===========================
+/* ==========================================
    Red Line
-=========================== */
+========================================== */
 
 .line{
 
-    width:120px;
+    width:110px;
 
     height:5px;
 
-    border-radius:50px;
+    background:#e53935;
 
-    background:#ff3131;
+    border-radius:100px;
 
     margin-bottom:30px;
 
 }
 
-/* ===========================
+/* ==========================================
    Description
-=========================== */
+========================================== */
 
 p{
 
-    color:#d8d8d8;
-
-    font-size:19px;
+    color:#e6e6e6;
 
     line-height:1.8;
 
-    margin-bottom:35px;
+    font-size:18px;
+
+    margin-bottom:40px;
 
 }
 
-/* ===========================
-   Buttons
-=========================== */
+/* ==========================================
+   BUTTON
+========================================== */
 
 .buttons{
 
     display:flex;
-
     flex-direction:column;
-
     gap:18px;
 
 }
@@ -186,19 +195,19 @@ p{
 
     display:flex;
 
-    align-items:center;
-
     justify-content:space-between;
+
+    align-items:center;
 
     text-decoration:none;
 
     color:white;
 
-    padding:18px 25px;
+    padding:18px 24px;
 
     border-radius:14px;
 
-    font-size:18px;
+    font-size:17px;
 
     font-weight:600;
 
@@ -206,121 +215,7 @@ p{
 
 }
 
-.website{
-
-    background:#1767d4;
-
-}
-
-.plumbing{
-
-    background:#15803d;
-
-}
-
-.hydrant{
-
-    background:#c1121f;
-
-}
-
-.whatsapp{
-
-    background:#16a34a;
-
-}
-
-.btn:hover{
-
-    transform:translateX(10px);
-
-    box-shadow:0 15px 35px rgba(0,0,0,.35);
-
-}
-
-/* ===========================
-   Animations
-=========================== */
-
-@keyframes fadeUp{
-
-    from{
-
-        opacity:0;
-
-        transform:translateY(35px);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:translateY(0);
-
-    }
-
-}
-
-@keyframes bgZoom{
-
-    from{
-
-        background-size:100%;
-
-    }
-
-    to{
-
-        background-size:108%;
-
-    }
-
-}
-
-/* ===========================
-   Mobile
-=========================== */
-
-@media(max-width:900px){
-
-.container{
-
-    width:92%;
-
-    margin:20px;
-
-    padding:30px;
-
-}
-
-h1{
-
-    font-size:36px;
-
-}
-
-p{
-
-    font-size:16px;
-
-}
-
-.logo{
-
-    width:70px;
-
-}
-
-.btn{
-
-    font-size:16px;
-
-}
-
-}
-
-.btn span{
+.left{
 
     display:flex;
 
@@ -330,16 +225,110 @@ p{
 
 }
 
-.btn i{
+.right{
 
-    font-size:22px;
-
-    transition:.3s;
+    transition:.35s;
 
 }
 
-.btn:hover .fa-chevron-right{
+.website{
 
-    transform:translateX(6px);
+    background:#0d6efd;
+
+}
+
+.plumbing{
+
+    background:#198754;
+
+}
+
+.hydrant{
+
+    background:#dc3545;
+
+}
+
+.whatsapp{
+
+    background:#25D366;
+
+}
+
+.btn:hover{
+
+    transform:translateX(8px);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+}
+
+.btn:hover .right{
+
+    transform:translateX(8px);
+
+}
+
+/* ==========================================
+   ANIMATION
+========================================== */
+
+.delay1{
+
+    animation:fadeUp .8s .2s both;
+
+}
+
+.delay2{
+
+    animation:fadeUp .8s .35s both;
+
+}
+
+.delay3{
+
+    animation:fadeUp .8s .5s both;
+
+}
+
+.delay4{
+
+    animation:fadeUp .8s .65s both;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(35px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes bgZoom{
+
+from{
+
+background-size:100%;
+
+}
+
+to{
+
+background-size:108%;
+
+}
 
 }
