@@ -104,7 +104,7 @@ body{
 
     box-shadow:
 
-        0 25px 70px rgba(0,0,0,.45);
+        0 8px 25px rgba(0,0,0,.18);
 
     animation:fadeUp .9s ease;
 
@@ -322,7 +322,7 @@ p{
 
 .pompaarthur{
 
-    background:#ff4f61;
+    background:#007979;
 
 }
 
@@ -342,7 +342,7 @@ p{
 
 .diesel{
 
-    background:#25D366;
+    background:#EA580C;
 
 }
 
@@ -352,8 +352,7 @@ p{
 
 .motor{
 
-    background:#25D366;
-
+    background:#D97706;
 }
 
 /* ===========================
@@ -362,7 +361,7 @@ p{
 
 .nfpa{
 
-    background:#25D366;
+    background:#7C3AED;
 
 }
 
@@ -382,7 +381,7 @@ p{
 
 .btn:hover{
 
-    transform:translateX(8px);
+    transform:translateX(-3px);
 
     filter:brightness(108%);
 
