@@ -385,6 +385,43 @@ p{
 }
 
 /* ===========================
+   INSTAGRAM ICON
+=========================== */
+
+.instagram-icon{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:42px;
+    height:42px;
+
+    margin:25px auto 0;
+
+    color:#ffffff;
+
+    font-size:24px;
+
+    text-decoration:none;
+
+    border-radius:50%;
+
+    transition:.3s ease;
+
+}
+
+.instagram-icon:hover{
+
+    transform:scale(1.15);
+
+    color:#E1306C;
+
+}
+
+/* ===========================
    BUTTON HOVER
 =========================== */
 
