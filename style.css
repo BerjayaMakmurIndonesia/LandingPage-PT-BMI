@@ -317,7 +317,26 @@ p{
 }
 
 /* ===========================
-   POMPA ARTHUR BUTTON
+   COMPANY PROFILE BUTTON
+=========================== */
+
+.compro{
+
+    background:#67BED9;
+
+}
+
+/* ===========================
+   ALL BROCHURE BUTTON
+=========================== */
+
+.semuabrosur{
+
+    background:#67C9D9;
+}
+
+/* ===========================
+   KATALOG ARTHUR BUTTON
 =========================== */
 
 .pompaarthur{
@@ -337,16 +356,6 @@ p{
 }
 
 /* ===========================
-   COMPANY PROFILE BUTTON
-=========================== */
-
-.compro{
-
-    background:#67BED9;
-
-}
-
-/* ===========================
    ELEKTRIK MOTOR BUTTON
 =========================== */
 
@@ -354,15 +363,6 @@ p{
 
     background:#D97706;
 } */
-
-/* ===========================
-   ALL BROCHURE BUTTON
-=========================== */
-
-.semuabrosur{
-
-    background:#67C9D9;
-}
 
 /* ===========================
    NFPA MEMBER BUTTON
